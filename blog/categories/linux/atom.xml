@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Just curious]]></title>
-  <link href="http://cacophonix.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Linux | Just curious]]></title>
+  <link href="http://cacophonix.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
   <updated>2014-06-22T20:00:22+06:00</updated>
   <id>http://cacophonix.github.io/</id>
@@ -22,26 +22,21 @@
 www.example.com or www.test.com. I was wondering how can i test these examples. then I just googled and found
 that I can easily test them in my PC without purchasing the domain names and configuring DNS.</p>
 
-<p>the magic thing is there is a file in /etc/hosts in my ubuntu that contains</p>
+<p>the magic thing is there is a file in /etc/hosts in my ubuntu that contains
+``` bash</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>127.0.0.1  localhost
-</span></code></pre></td></tr></table></div></figure>
+<p>127.0.0.1  localhost
+```</p>
 
+<p>The format here is
+<code>bash
+&lt;ip-address&gt; &lt;space&gt; &lt;site-domain&gt;
+</code></p>
 
-<p>The format here is</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;ip-address&gt; &lt;space&gt; &lt;site-domain&gt;
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>If I add</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>127.1.1.1 test.com
-</span></code></pre></td></tr></table></div></figure>
-
+<p>If I add
+<code>bash
+127.1.1.1 test.com
+</code></p>
 
 <p>then if I write in the address bar of my browser &ldquo;test.com&rdquo; then the browser will automatically load the 127.1.1.1 ip address.</p>
 

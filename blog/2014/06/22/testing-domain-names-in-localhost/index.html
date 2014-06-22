@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Just curious</title>
+  <title>Testing Domain Names in Localhost - Just curious</title>
   <meta name="author" content="Ashiqul Mostofa">
 
   
-  <meta name="description" content=" Blog Archive 2014 Testing Domain Names in Localhost
-Jun 22 2014 posted in linux Recent Posts Testing Domain Names in Localhost ">
+  <meta name="description" content="I was testing my local Apache configuration. In those tutorials the examples were using domain names like
+www.example.com or www.test.com. I was &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ Jun 22 2014 posted in linux Recent Posts Testing Domain Names in Localhost ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cacophonix.github.io/blog/archives">
+  <link rel="canonical" href="http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Just curious" type="application/atom+xml">
@@ -65,35 +65,109 @@ Jun 22 2014 posted in linux Recent Posts Testing Domain Names in Localhost ">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Testing Domain Names in Localhost</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-22T19:39:52+06:00" pubdate data-updated="true">Jun 22<sup>nd</sup>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>I was testing my local Apache configuration. In those tutorials the examples were using domain names like
+www.example.com or www.test.com. I was wondering how can i test these examples. then I just googled and found
+that I can easily test them in my PC without purchasing the domain names and configuring DNS.</p>
 
-  
-  <h2>2014</h2>
+<p>the magic thing is there is a file in /etc/hosts in my ubuntu that contains</p>
 
-<article>
-  
-<h1><a href="/blog/2014/06/22/testing-domain-names-in-localhost/">Testing Domain Names in Localhost</a></h1>
-<time datetime="2014-06-22T19:39:52+06:00" pubdate><span class='month'>Jun</span> <span class='day'>22</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>linux</a></span>
-</footer>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>127.0.0.1  localhost
+</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>The format here is</p>
 
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>&lt;ip-address&gt; &lt;space&gt; &lt;site-domain&gt;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If I add</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>127.1.1.1 test.com
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then if I write in the address bar of my browser &ldquo;test.com&rdquo; then the browser will automatically load the 127.1.1.1 ip address.</p>
+
+<p>Isn&rsquo;t it awesome ?</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ashiqul Mostofa</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-22T19:39:52+06:00" pubdate data-updated="true">Jun 22<sup>nd</sup>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost/" data-via="" data-counturl="http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
