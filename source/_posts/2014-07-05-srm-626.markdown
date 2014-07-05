@@ -1,0 +1,11 @@
+---
+layout: post
+title: "SRM 626"
+date: 2014-07-05 14:09:38 +0600
+comments: true
+categories: ['Sports Programming']
+---
+
+divition 2 level 2 problem was a nice problem. In this problem we are said that we have won a game in dice competition! and are asked to
+return the expected value of the dice. the solution is (sum of the numbers of winning position)/(number of events that i win).
+
