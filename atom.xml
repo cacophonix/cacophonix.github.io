@@ -4,7 +4,7 @@
   <title><![CDATA[Just curious]]></title>
   <link href="http://cacophonix.github.io/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2014-06-22T20:00:22+06:00</updated>
+  <updated>2014-07-05T14:23:13+06:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SRM 626]]></title>
+    <link href="http://cacophonix.github.io/blog/2014/07/05/srm-626/"/>
+    <updated>2014-07-05T14:09:38+06:00</updated>
+    <id>http://cacophonix.github.io/blog/2014/07/05/srm-626</id>
+    <content type="html"><![CDATA[<p>divition 2 level 2 problem was a nice problem. In this problem we are said that we have won a game in dice competition! and are asked to
+return the expected value of the dice. the solution is (sum of the numbers of winning position)/(number of events that i win).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing Domain Names in Localhost]]></title>
