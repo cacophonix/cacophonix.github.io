@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogging | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2015-08-11T07:12:14+06:00</updated>
+  <updated>2015-08-11T07:25:20+06:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -29,6 +29,37 @@ or this</p>
 http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github
 </code>
  I am just writing it down in case i forgot again.</p>
+
+<p>All in one place</p>
+
+<p>Initialization
+<code>
+git clone -b source git@github.com:cacophonix/cacophonix.github.io octopress
+cd octopress
+git clone git@github.com:cacophonix/cacophonix.github.io _deploy
+gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+rake setup_github_pages
+</code></p>
+
+<p>Pushing changes from one machine
+<code>
+rake generate
+git add .
+git commit -am "Some comment here."
+git push origin source  # update the remote source branch
+rake deploy             # update the remote master branch
+</code></p>
+
+<p>From another machine</p>
+
+<p><code>
+cd octopress
+git pull origin source  # update the local source branch
+cd ./_deploy
+git pull origin master  # update the local master branch
+</code></p>
 ]]></content>
   </entry>
   
