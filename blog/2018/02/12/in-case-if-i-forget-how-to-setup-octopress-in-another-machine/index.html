@@ -9,9 +9,7 @@
   <meta name="author" content="Ashiqul Mostofa">
 
   
-  <meta name="description" content="Recently I had not been in touch with my blog and forgot the whole process of using my blog in a new machine.
-I have learnt from this page. 1
-http:// &hellip;">
+  <meta name="description" content="Recently I had not been in touch with my blog and forgot the whole process of using my blog in a new machine. Initialization git clone -b source git@ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ http:// &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine">
+  <link rel="canonical" href="http://cacophonix.github.io/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Just curious" type="application/atom+xml">
@@ -86,15 +84,42 @@ http:// &hellip;">
   
 
 
-<time datetime="2015-01-12T04:51:51+08:00" pubdate data-updated="true">Jan 12<sup>th</sup>, 2015</time>
+<time datetime="2018-02-12T04:51:51+08:00" pubdate data-updated="true">Feb 12<sup>th</sup>, 2018</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Recently I had not been in touch with my blog and  forgot the whole process of using my blog in a new machine.
-I have learnt from this page.</p>
+<div class="entry-content"><p>Recently I had not been in touch with my blog and  forgot the whole process of using my blog in a new machine.</p>
+
+<p>Initialization</p>
+
+<pre><code>git clone -b source git@github.com:cacophonix/cacophonix.github.io octopress
+cd octopress
+git clone git@github.com:cacophonix/cacophonix.github.io _deploy
+gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+rake setup_github_pages
+</code></pre>
+
+<p>Pushing changes from one machine</p>
+
+<pre><code>rake generate
+git add .
+git commit -am "Some comment here."
+git push origin source  # update the remote source branch
+rake deploy             # update the remote master branch
+</code></pre>
+
+<p>From another machine</p>
+
+<pre><code>cd octopress
+git pull origin source  # update the local source branch
+cd ./_deploy
+git pull origin master  # update the local master branch
+</code></pre>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</span></code></pre></td></tr></table></div></figure>
@@ -129,7 +154,7 @@ I have learnt from this page.</p>
   
 
 
-<time datetime="2015-01-12T04:51:51+08:00" pubdate data-updated="true">Jan 12<sup>th</sup>, 2015</time>
+<time datetime="2018-02-12T04:51:51+08:00" pubdate data-updated="true">Feb 12<sup>th</sup>, 2018</time>
       
 
 <span class="categories">
@@ -143,7 +168,7 @@ I have learnt from this page.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/" data-via="" data-counturl="http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://cacophonix.github.io/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/" data-via="" data-counturl="http://cacophonix.github.io/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/" >Tweet</a>
   
   
   
@@ -168,7 +193,7 @@ I have learnt from this page.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/">In Case if I Forget How to Setup Octopress in Another Machine</a>
+        <a href="/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/">In Case if I Forget How to Setup Octopress in Another Machine</a>
       </li>
     
       <li class="post">

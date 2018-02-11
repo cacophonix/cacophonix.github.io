@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogging | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2018-02-11T19:28:51+08:00</updated>
+  <updated>2018-02-12T00:25:32+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -15,12 +15,40 @@
   
   <entry>
     <title type="html"><![CDATA[In Case if I Forget How to Setup Octopress in Another Machine]]></title>
-    <link href="http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/"/>
-    <updated>2015-01-12T04:51:51+08:00</updated>
-    <id>http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine</id>
-    <content type="html"><![CDATA[<p>Recently I had not been in touch with my blog and  forgot the whole process of using my blog in a new machine.
-I have learnt from this page.
-<code>
+    <link href="http://cacophonix.github.io/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/"/>
+    <updated>2018-02-12T04:51:51+08:00</updated>
+    <id>http://cacophonix.github.io/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine</id>
+    <content type="html"><![CDATA[<p>Recently I had not been in touch with my blog and  forgot the whole process of using my blog in a new machine.</p>
+
+<p>Initialization</p>
+
+<pre><code>git clone -b source git@github.com:cacophonix/cacophonix.github.io octopress
+cd octopress
+git clone git@github.com:cacophonix/cacophonix.github.io _deploy
+gem install bundler
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+rake setup_github_pages
+</code></pre>
+
+<p>Pushing changes from one machine</p>
+
+<pre><code>rake generate
+git add .
+git commit -am "Some comment here."
+git push origin source  # update the remote source branch
+rake deploy             # update the remote master branch
+</code></pre>
+
+<p>From another machine</p>
+
+<pre><code>cd octopress
+git pull origin source  # update the local source branch
+cd ./_deploy
+git pull origin master  # update the local master branch
+</code></pre>
+
+<p><code>
 http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/
 </code>
 or this</p>
