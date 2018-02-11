@@ -4,7 +4,7 @@
   <title><![CDATA[Just curious]]></title>
   <link href="http://cacophonix.github.io/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2015-08-25T01:53:14+06:00</updated>
+  <updated>2018-02-11T19:28:51+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -16,69 +16,29 @@
   <entry>
     <title type="html"><![CDATA[In Case if I Forget How to Setup Octopress in Another Machine]]></title>
     <link href="http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/"/>
-    <updated>2015-01-12T02:51:51+06:00</updated>
+    <updated>2015-01-12T04:51:51+08:00</updated>
     <id>http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine</id>
     <content type="html"><![CDATA[<p>Recently I had not been in touch with my blog and  forgot the whole process of using my blog in a new machine.
-I am just writing it down in case i forgot again.</p>
-
-<p>Initialization</p>
+I have learnt from this page.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone -b source git@github.com:cacophonix/cacophonix.github.io octopress
-</span><span class='line'>cd octopress
-</span><span class='line'>git clone git@github.com:cacophonix/cacophonix.github.io _deploy
-</span><span class='line'>gem install bundler
-</span><span class='line'>rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-</span><span class='line'>bundle install
-</span><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Pushing changes from one machine</p>
+<p>or this</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>git add .
-</span><span class='line'>git commit -am "Some comment here."
-</span><span class='line'>git push origin source  # update the remote source branch
-</span><span class='line'>rake deploy             # update the remote master branch</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github</span></code></pre></td></tr></table></div></figure>
 
 
-<p>From another machine</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
-</span><span class='line'>git pull origin source  # update the local source branch
-</span><span class='line'>cd ./_deploy
-</span><span class='line'>git pull origin master  # update the local master branch</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Source</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/
-</span><span class='line'>http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github</span></code></pre></td></tr></table></div></figure>
-
+<p> I am just writing it down in case i forgot again.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[SRM 626]]></title>
     <link href="http://cacophonix.github.io/blog/2014/07/05/srm-626/"/>
-    <updated>2014-07-05T14:09:38+06:00</updated>
+    <updated>2014-07-05T16:09:38+08:00</updated>
     <id>http://cacophonix.github.io/blog/2014/07/05/srm-626</id>
     <content type="html"><![CDATA[<p>divition 2 level 2 problem was a nice problem. In this problem we are said that we have won a game in dice competition! and are asked to
 return the expected value of the dice. the solution is (sum of the numbers of winning position)/(number of events that i win).</p>
@@ -88,7 +48,7 @@ return the expected value of the dice. the solution is (sum of the numbers of wi
   <entry>
     <title type="html"><![CDATA[Testing Domain Names in Localhost]]></title>
     <link href="http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost/"/>
-    <updated>2014-06-22T19:39:52+06:00</updated>
+    <updated>2014-06-22T21:39:52+08:00</updated>
     <id>http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost</id>
     <content type="html"><![CDATA[<p>I was testing my local Apache configuration. In those tutorials the examples were using domain names like
 www.example.com or www.test.com. I was wondering how can i test these examples. then I just googled and found

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogging | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2015-08-25T01:53:14+06:00</updated>
+  <updated>2018-02-11T19:28:51+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -16,45 +16,19 @@
   <entry>
     <title type="html"><![CDATA[In Case if I Forget How to Setup Octopress in Another Machine]]></title>
     <link href="http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/"/>
-    <updated>2015-01-12T02:51:51+06:00</updated>
+    <updated>2015-01-12T04:51:51+08:00</updated>
     <id>http://cacophonix.github.io/blog/2015/01/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine</id>
     <content type="html"><![CDATA[<p>Recently I had not been in touch with my blog and  forgot the whole process of using my blog in a new machine.
-I am just writing it down in case i forgot again.</p>
-
-<p>Initialization
-<code>
-git clone -b source git@github.com:cacophonix/cacophonix.github.io octopress
-cd octopress
-git clone git@github.com:cacophonix/cacophonix.github.io _deploy
-gem install bundler
-rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
-bundle install
-rake setup_github_pages
-</code></p>
-
-<p>Pushing changes from one machine
-<code>
-rake generate
-git add .
-git commit -am "Some comment here."
-git push origin source  # update the remote source branch
-rake deploy             # update the remote master branch
-</code></p>
-
-<p>From another machine</p>
-
-<p><code>
-cd octopress
-git pull origin source  # update the local source branch
-cd ./_deploy
-git pull origin master  # update the local master branch
-</code></p>
-
-<p>Source
+I have learnt from this page.
 <code>
 http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/
+</code>
+or this</p>
+
+<p><code>
 http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github
-</code></p>
+</code>
+ I am just writing it down in case i forgot again.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2015-08-25T01:53:14+06:00</updated>
+  <updated>2018-02-11T19:28:51+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Testing Domain Names in Localhost]]></title>
     <link href="http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost/"/>
-    <updated>2014-06-22T19:39:52+06:00</updated>
+    <updated>2014-06-22T21:39:52+08:00</updated>
     <id>http://cacophonix.github.io/blog/2014/06/22/testing-domain-names-in-localhost</id>
     <content type="html"><![CDATA[<p>I was testing my local Apache configuration. In those tutorials the examples were using domain names like
 www.example.com or www.test.com. I was wondering how can i test these examples. then I just googled and found
