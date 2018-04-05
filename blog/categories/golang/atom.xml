@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Golang | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/golang/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2018-04-06T03:17:48+08:00</updated>
+  <updated>2018-04-06T03:22:30+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -243,7 +243,7 @@
 </span><span class='line'>		<span class="nb">delete</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">cache</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
 </span><span class='line'>		<span class="nb">delete</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">linkedListCache</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
 </span><span class='line'>	<span class="p">}</span>
-</span><span class='line'>	<span class="nx">printkeys</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">first</span><span class="p">)</span>
+</span><span class='line'>	<span class="c1">//printkeys(lru.first)</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="kd">func</span> <span class="nx">printkeys</span><span class="p">(</span><span class="nx">node</span> <span class="o">*</span><span class="nx">Node</span><span class="p">)</span> <span class="p">{</span>
