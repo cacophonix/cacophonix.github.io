@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Golang | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/golang/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2018-04-06T03:12:17+08:00</updated>
+  <updated>2018-04-06T03:14:24+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Started Learning Golang, Implemented LRU Cache]]></title>
-    <link href="http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache/"/>
+    <link href="http://cacophonix.github.io/blog/2018/04/06/started-learning-golang-implemented-lru-cache/"/>
     <updated>2018-04-06T02:56:48+08:00</updated>
-    <id>http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache</id>
+    <id>http://cacophonix.github.io/blog/2018/04/06/started-learning-golang-implemented-lru-cache</id>
     <content type="html"><![CDATA[<p>Few Days ago I have started learning GO. Implemented LRU cache. it was fun.
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (lru.go)</span> <a href='/downloads/code/lru.go'>download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
