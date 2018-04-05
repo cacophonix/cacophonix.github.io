@@ -13,4 +13,5 @@ categories:
 * Concurrency provides a way to structure a solution to solve a problem that may (but not necessarily) be parallelizable.
 * Concurrency is a way to structure a program by breaking it into pieces that can be executed independently.
 
+from Rob Pike.
 Reference: https://talks.golang.org/2012/waza.slide

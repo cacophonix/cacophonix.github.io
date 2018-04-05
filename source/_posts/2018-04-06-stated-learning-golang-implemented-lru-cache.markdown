@@ -6,5 +6,5 @@ comments: true
 categories: golang
 ---
 
-Few Days ago I have started learning GO. Implemented LRU cache. its fun. 
+Few Days ago I have started learning GO. Implemented LRU cache. it was fun. 
 {% include_code lru.go %}

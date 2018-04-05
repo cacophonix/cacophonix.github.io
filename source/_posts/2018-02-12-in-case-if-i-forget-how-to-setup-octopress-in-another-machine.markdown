@@ -30,11 +30,10 @@ From another machine
     cd ./_deploy
     git pull origin master  # update the local master branch
 
-
+Reference:
 ```
 http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/
 ```
-or this
 
 ```
 http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github
