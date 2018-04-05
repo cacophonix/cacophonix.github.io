@@ -4,7 +4,7 @@
   <title><![CDATA[Just curious]]></title>
   <link href="http://cacophonix.github.io/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2018-02-12T00:25:32+08:00</updated>
+  <updated>2018-04-06T03:03:49+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Started Learning Golang, Implemented LRU Cache]]></title>
+    <link href="http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache/"/>
+    <updated>2018-04-06T02:56:48+08:00</updated>
+    <id>http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache</id>
+    <content type="html"><![CDATA[<p>Few Days ago I have started learning GO. Implemented LRU cache. its fun.
+File /Users/ashiqulmostofa/blog/octopress/source/downloads/code/lru.go could not be found</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Concurrency vs Parallelism]]></title>
+    <link href="http://cacophonix.github.io/blog/2018/02/13/concurrency-vs-parallelism/"/>
+    <updated>2018-02-13T00:07:38+08:00</updated>
+    <id>http://cacophonix.github.io/blog/2018/02/13/concurrency-vs-parallelism</id>
+    <content type="html"><![CDATA[<ul>
+<li>Concurrency is about dealing with lots of things at once.</li>
+<li>Parallelism is about doing lots of things at once.</li>
+<li>Not the same, but related.</li>
+<li>Concurrency is about structure, parallelism is about execution.</li>
+<li>Concurrency provides a way to structure a solution to solve a problem that may (but not necessarily) be parallelizable.</li>
+<li>Concurrency is a way to structure a program by breaking it into pieces that can be executed independently.</li>
+</ul>
+
+
+<p>Reference: <a href="https://talks.golang.org/2012/waza.slide">https://talks.golang.org/2012/waza.slide</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Function Closure in Go]]></title>
+    <link href="http://cacophonix.github.io/blog/2018/02/12/function-closure-in-go/"/>
+    <updated>2018-02-12T23:36:23+08:00</updated>
+    <id>http://cacophonix.github.io/blog/2018/02/12/function-closure-in-go</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Things to Keep in Mind About Go]]></title>
+    <link href="http://cacophonix.github.io/blog/2018/02/12/things-to-keep-in-mind-about-go/"/>
+    <updated>2018-02-12T23:33:40+08:00</updated>
+    <id>http://cacophonix.github.io/blog/2018/02/12/things-to-keep-in-mind-about-go</id>
+    <content type="html"><![CDATA[<ul>
+<li>Any variable that begins with a capital letter means it will be exported, private otherwise.</li>
+<li>The same rule applies for functions and constants, no public or private keyword exists in Go.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[In Case if I Forget How to Setup Octopress in Another Machine]]></title>

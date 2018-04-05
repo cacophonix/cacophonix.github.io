@@ -3,6 +3,30 @@
   
   
   <url>
+    <loc>http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache/</loc>
+    <lastmod>2018-04-06T02:56:48+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://cacophonix.github.io/blog/2018/02/13/concurrency-vs-parallelism/</loc>
+    <lastmod>2018-02-13T00:07:38+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://cacophonix.github.io/blog/2018/02/12/function-closure-in-go/</loc>
+    <lastmod>2018-02-12T23:36:23+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://cacophonix.github.io/blog/2018/02/12/things-to-keep-in-mind-about-go/</loc>
+    <lastmod>2018-02-12T23:33:40+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://cacophonix.github.io/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/</loc>
     <lastmod>2018-02-12T04:51:51+08:00</lastmod>
     <priority>0.8</priority>
@@ -23,21 +47,21 @@
   
   <url>
     <loc>http://cacophonix.github.io/blog/archives/</loc>
-    <lastmod>2018-02-12T00:25:32+08:00</lastmod>
+    <lastmod>2018-04-06T03:03:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://cacophonix.github.io/</loc>
-    <lastmod>2018-02-12T00:25:32+08:00</lastmod>
+    <lastmod>2018-04-06T03:03:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://cacophonix.github.io/new-page/</loc>
-    <lastmod>2018-02-12T00:25:32+08:00</lastmod>
+    <lastmod>2018-04-06T03:03:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

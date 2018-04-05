@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Golang | Just curious]]></title>
+  <link href="http://cacophonix.github.io/blog/categories/golang/atom.xml" rel="self"/>
+  <link href="http://cacophonix.github.io/"/>
+  <updated>2018-04-06T03:03:49+08:00</updated>
+  <id>http://cacophonix.github.io/</id>
+  <author>
+    <name><![CDATA[Ashiqul Mostofa]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Started Learning Golang, Implemented LRU Cache]]></title>
+    <link href="http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache/"/>
+    <updated>2018-04-06T02:56:48+08:00</updated>
+    <id>http://cacophonix.github.io/blog/2018/04/06/stated-learning-golang-implemented-lru-cache</id>
+    <content type="html"><![CDATA[<p>Few Days ago I have started learning GO. Implemented LRU cache. its fun.
+File /Users/ashiqulmostofa/blog/octopress/source/downloads/code/lru.go could not be found</p>
+]]></content>
+  </entry>
+  
+</feed>
