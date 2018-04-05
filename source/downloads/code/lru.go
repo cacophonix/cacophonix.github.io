@@ -86,7 +86,7 @@ func (lru *LRU) set(key, val string) {
 		delete(lru.cache, key)
 		delete(lru.linkedListCache, key)
 	}
-	printkeys(lru.first)
+	//printkeys(lru.first)
 }
 
 func printkeys(node *Node) {
