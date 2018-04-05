@@ -9,8 +9,28 @@
   <meta name="author" content="Ashiqul Mostofa">
 
   
-  <meta name="description" content="Few Days ago I have started learning GO. Implemented LRU cache. its fun.
-File /Users/ashiqulmostofa/blog/octopress/source/downloads/code/lru.go could &hellip;">
+  <meta name="description" content="Few Days ago I have started learning GO. Implemented LRU cache. it was fun. (lru.go) download
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -95,8 +115,281 @@ File /Users/ashiqulmostofa/blog/octopress/source/downloads/code/lru.go could &he
   </header>
 
 
-  <div class="entry-content"><p>Few Days ago I have started learning GO. Implemented LRU cache. its fun.
-File /Users/ashiqulmostofa/blog/octopress/source/downloads/code/lru.go could not be found</p>
+  <div class="entry-content"><p>Few Days ago I have started learning GO. Implemented LRU cache. it was fun.</p>
+
+<figure class='code'><figcaption><span> (lru.go)</span> <a href='/downloads/code/lru.go'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+</pre></td><td class='code'><pre><code class='go'><span class='line'><span class="kn">package</span> <span class="nx">main</span>
+</span><span class='line'>
+</span><span class='line'><span class="kn">import</span> <span class="p">(</span>
+</span><span class='line'>  <span class="s">&quot;fmt&quot;</span>
+</span><span class='line'><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="cm">/*</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">type</span> <span class="nx">Node</span> <span class="kd">struct</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">next</span> <span class="o">*</span><span class="nx">Node</span>
+</span><span class='line'>  <span class="nx">prev</span> <span class="o">*</span><span class="nx">Node</span>
+</span><span class='line'>  <span class="nx">key</span>  <span class="kt">string</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">type</span> <span class="nx">LRU</span> <span class="kd">struct</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">cache</span>           <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kt">string</span>
+</span><span class='line'>  <span class="nx">linkedListCache</span> <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="o">*</span><span class="nx">Node</span>
+</span><span class='line'>  <span class="nx">maxSize</span>         <span class="kt">int</span>
+</span><span class='line'>  <span class="nx">first</span>           <span class="o">*</span><span class="nx">Node</span>
+</span><span class='line'>  <span class="nx">last</span>            <span class="o">*</span><span class="nx">Node</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="p">(</span><span class="nx">lru</span> <span class="o">*</span><span class="nx">LRU</span><span class="p">)</span> <span class="nx">init</span><span class="p">(</span><span class="nx">max_size</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">cache</span> <span class="p">=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kt">string</span><span class="p">)</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">linkedListCache</span> <span class="p">=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="o">*</span><span class="nx">Node</span><span class="p">)</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">maxSize</span> <span class="p">=</span> <span class="nx">max_size</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span> <span class="p">=</span> <span class="kc">nil</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span> <span class="p">=</span> <span class="kc">nil</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="p">(</span><span class="nx">lru</span> <span class="o">*</span><span class="nx">LRU</span><span class="p">)</span> <span class="nx">deleteNode</span><span class="p">(</span><span class="nx">node</span> <span class="o">*</span><span class="nx">Node</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">prev</span><span class="p">,</span> <span class="nx">next</span> <span class="o">*</span><span class="nx">Node</span>
+</span><span class='line'>  <span class="nx">prev</span> <span class="p">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">prev</span>
+</span><span class='line'>  <span class="nx">next</span> <span class="p">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">next</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">prev</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">prev</span><span class="p">.</span><span class="nx">next</span> <span class="p">=</span> <span class="nx">next</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span> <span class="p">=</span> <span class="nx">next</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">next</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">next</span><span class="p">.</span><span class="nx">prev</span> <span class="p">=</span> <span class="nx">prev</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span> <span class="p">=</span> <span class="nx">prev</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="p">(</span><span class="nx">lru</span> <span class="o">*</span><span class="nx">LRU</span><span class="p">)</span> <span class="nx">deleteFirst</span><span class="p">()</span> <span class="kt">string</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">key</span> <span class="o">:=</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">key</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span> <span class="p">=</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">next</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span><span class="p">.</span><span class="nx">prev</span> <span class="p">=</span> <span class="kc">nil</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">key</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="p">(</span><span class="nx">lru</span> <span class="o">*</span><span class="nx">LRU</span><span class="p">)</span> <span class="nx">appendNode</span><span class="p">(</span><span class="nx">node</span> <span class="o">*</span><span class="nx">Node</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span><span class="p">.</span><span class="nx">next</span> <span class="p">=</span> <span class="nx">node</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">node</span><span class="p">.</span><span class="nx">prev</span> <span class="p">=</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span>
+</span><span class='line'>  <span class="nx">node</span><span class="p">.</span><span class="nx">next</span> <span class="p">=</span> <span class="kc">nil</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span> <span class="p">=</span> <span class="nx">node</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">first</span> <span class="p">=</span> <span class="nx">node</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span> <span class="o">==</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span> <span class="p">=</span> <span class="nx">node</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="p">(</span><span class="nx">lru</span> <span class="o">*</span><span class="nx">LRU</span><span class="p">)</span> <span class="nx">set</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">val</span> <span class="kt">string</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">cache</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="p">=</span> <span class="nx">val</span>
+</span><span class='line'>  <span class="nx">node</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">linkedListCache</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">ok</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">deleteNode</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">appendNode</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">node</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">Node</span><span class="p">{</span><span class="kc">nil</span><span class="p">,</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">last</span><span class="p">,</span> <span class="nx">key</span><span class="p">}</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">linkedListCache</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="p">=</span> <span class="nx">node</span>
+</span><span class='line'>      <span class="nx">lru</span><span class="p">.</span><span class="nx">appendNode</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">n</span> <span class="o">:=</span> <span class="nb">len</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">linkedListCache</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">n</span> <span class="p">&gt;</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">maxSize</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">key</span> <span class="p">=</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">deleteFirst</span><span class="p">()</span>
+</span><span class='line'>      <span class="nb">delete</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">cache</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
+</span><span class='line'>      <span class="nb">delete</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">linkedListCache</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">printkeys</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">first</span><span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="nx">printkeys</span><span class="p">(</span><span class="nx">node</span> <span class="o">*</span><span class="nx">Node</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">for</span> <span class="nx">node</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">key</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+</span><span class='line'>      <span class="nx">node</span> <span class="p">=</span> <span class="nx">node</span><span class="p">.</span><span class="nx">next</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">()</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="p">(</span><span class="nx">lru</span> <span class="o">*</span><span class="nx">LRU</span><span class="p">)</span> <span class="nx">get</span><span class="p">(</span><span class="nx">key</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">string</span><span class="p">,</span> <span class="kt">bool</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">val</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">lru</span><span class="p">.</span><span class="nx">cache</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">!</span><span class="nx">ok</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">return</span> <span class="s">&quot;key not found: &quot;</span> <span class="o">+</span> <span class="nx">key</span><span class="p">,</span> <span class="kc">false</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">val</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">val</span><span class="p">,</span> <span class="kc">true</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">lru</span> <span class="o">:=</span> <span class="o">&amp;</span><span class="nx">LRU</span><span class="p">{}</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">,</span> <span class="s">&quot;1&quot;</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 1</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="s">&quot;2&quot;</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 1,2</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">,</span> <span class="s">&quot;3&quot;</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 1,2,3</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">))</span> <span class="c1">//success</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 2,3,1</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s">&quot;4&quot;</span><span class="p">,</span> <span class="s">&quot;4&quot;</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 3,1,4</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;4&quot;</span><span class="p">))</span> <span class="c1">//success</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 3,1,4</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">))</span> <span class="c1">//success</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 1,4,3</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">))</span> <span class="c1">//fail</span>
+</span><span class='line'>  <span class="nx">lru</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="s">&quot;2&quot;</span><span class="p">)</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 4,3,2</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;2&quot;</span><span class="p">))</span> <span class="c1">//success</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 4,3,2</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;3&quot;</span><span class="p">))</span> <span class="c1">// success</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 4,2,3</span>
+</span><span class='line'>  <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">lru</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">))</span> <span class="c1">// fail</span>
+</span><span class='line'>  <span class="c1">//state in linkedlist -&gt; 4,2,3</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
   
   
@@ -142,43 +435,8 @@ File /Users/ashiqulmostofa/blog/octopress/source/downloads/code/lru.go could not
 </ul>
 
 
-<p>Reference: <a href="https://talks.golang.org/2012/waza.slide">https://talks.golang.org/2012/waza.slide</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2018/02/12/function-closure-in-go/">Function Closure in Go</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2018-02-12T23:36:23+08:00" pubdate data-updated="true">Feb 12<sup>th</sup>, 2018</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content">
+<p>from Rob Pike.
+Reference: <a href="https://talks.golang.org/2012/waza.slide">https://talks.golang.org/2012/waza.slide</a></p>
 </div>
   
   
@@ -284,11 +542,13 @@ cd ./_deploy
 git pull origin master  # update the local master branch
 </code></pre>
 
+<p>Reference:</p>
+
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/</span></code></pre></td></tr></table></div></figure>
 
 
-<p>or this</p>
+
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github</span></code></pre></td></tr></table></div></figure>
@@ -423,15 +683,15 @@ that I can easily test them in my PC without purchasing the domain names and con
       </li>
     
       <li class="post">
-        <a href="/blog/2018/02/12/function-closure-in-go/">Function Closure in Go</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2018/02/12/things-to-keep-in-mind-about-go/">Things to Keep in Mind About Go</a>
       </li>
     
       <li class="post">
         <a href="/blog/2018/02/12/in-case-if-i-forget-how-to-setup-octopress-in-another-machine/">In Case if I Forget How to Setup Octopress in Another Machine</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/05/srm-626/">SRM 626</a>
       </li>
     
   </ul>

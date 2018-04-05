@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blogging | Just curious]]></title>
   <link href="http://cacophonix.github.io/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://cacophonix.github.io/"/>
-  <updated>2018-04-06T03:03:49+08:00</updated>
+  <updated>2018-04-06T03:12:17+08:00</updated>
   <id>http://cacophonix.github.io/</id>
   <author>
     <name><![CDATA[Ashiqul Mostofa]]></name>
@@ -48,10 +48,10 @@ cd ./_deploy
 git pull origin master  # update the local master branch
 </code></pre>
 
-<p><code>
+<p>Reference:
+<code>
 http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/
-</code>
-or this</p>
+</code></p>
 
 <p><code>
 http://stackoverflow.com/questions/20765692/how-to-setup-octopress-if-you-already-have-one-in-github
