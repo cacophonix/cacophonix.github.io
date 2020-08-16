@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: 
-
-Sitemap: http://cacophonix.github.io/sitemap.xml 
+Sitemap: cacophonix.github.io/sitemap.xml
