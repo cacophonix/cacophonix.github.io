@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: cacophonix.github.io/sitemap.xml
+Sitemap: ashiqulmostofa.com/sitemap.xml
