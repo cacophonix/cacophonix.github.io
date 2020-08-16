@@ -1,35 +1,35 @@
-<?xml-stylesheet type="text/xsl" href="ashiqulmostofa.com/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>ashiqulmostofa.com/</loc>
+    <loc>/</loc>
     <lastmod>2020-08-16T08:50:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>ashiqulmostofa.com/post/conc-vs-para/</loc>
+    <loc>/post/conc-vs-para/</loc>
     <lastmod>2020-08-16T08:50:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>ashiqulmostofa.com/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-08-16T08:50:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>ashiqulmostofa.com/categories/</loc>
+    <loc>/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>ashiqulmostofa.com/tags/</loc>
+    <loc>/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
