@@ -1,0 +1,11 @@
+---
+title: "Go Html Templates"
+date: 2020-08-17T06:20:38+08:00
+draft: false
+---
+
+Go provides some nice feature for templating. 
+Even this very blog is powered by go-hugo which is built on top of go templates.
+One of the advantage of go template is preventing Code injection. 
+go assumes that whoever writes the templates is trustworthy and whoever provides the data is not.
+

@@ -1,0 +1,12 @@
+---
+title: "Cpp Split String"
+date: 2020-09-22T10:05:03+08:00
+draft: true
+---
+
+istringstream ss(text);
+vector<string> vs(istream_iterator<string>{ss},istream_iterator<string>());
+
+
+more at https://www.fluentcpp.com/2017/04/21/how-to-split-a-string-in-c/
+
