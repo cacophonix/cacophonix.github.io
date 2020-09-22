@@ -3,7 +3,21 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-08-16T08:50:11+08:00</lastmod>
+    <lastmod>2020-08-17T06:20:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/go-templates/</loc>
+    <lastmod>2020-08-17T06:20:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-08-17T06:20:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -16,7 +30,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/post/cpp-split-string/</loc>
     <lastmod>2020-08-16T08:50:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
