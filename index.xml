@@ -26,12 +26,13 @@
     </item>
     
     <item>
-      <title>cpp split string</title>
+      <title>cpp split string using istreamstream</title>
       <link>/post/cpp-split-string/</link>
       <pubDate>Sun, 16 Aug 2020 08:50:11 +0800</pubDate>
       
       <guid>/post/cpp-split-string/</guid>
-      <description>test</description>
+      <description>title: &amp;ldquo;Cpp Split String&amp;rdquo; date: 2020-09-22T10:05:03+08:00 draft: false istringstream ss(text); vector vs(istream_iterator{ss},istream_iterator());
+more at https://www.fluentcpp.com/2017/04/21/how-to-split-a-string-in-c/</description>
     </item>
     
   </channel>
